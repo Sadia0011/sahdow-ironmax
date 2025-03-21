@@ -33,7 +33,7 @@
               </h2>
             {%- when 'caption' -%}
               <p
-                class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="rich-text__caption {{ block.settings.text_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -109,15 +109,15 @@
       "options": [
         {
           "value": "left",
-          "label": "t:sections.rich-text.settings.desktop_content_position.options__1.label"
+          "label": "Left"
         },
         {
           "value": "center",
-          "label": "t:sections.rich-text.settings.desktop_content_position.options__2.label"
+          "label": "Center"
         },
         {
           "value": "right",
-          "label": "t:sections.rich-text.settings.desktop_content_position.options__3.label"
+          "label": "Right"
         }
       ],
       "default": "center",
@@ -184,14 +184,12 @@
   "blocks": [
     {
       "type": "heading",
-      "name": "t:sections.rich-text.blocks.heading.name",
-      "limit": 3,
+      "name": "Heading",
       "settings": [
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "t:sections.rich-text.blocks.heading.settings.heading.default",
-          "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+          "label": "Heading"
         },
         {
           "type": "select",
@@ -219,7 +217,7 @@
             }
           ],
           "default": "h1",
-          "label": "t:sections.all.heading_size.label"
+          "label": "Heading Size"
         }
       ]
     },
@@ -236,52 +234,34 @@
         },
         {
           "type": "select",
-          "id": "text_style",
-          "options": [
-            {
-              "value": "subtitle",
-              "label": "t:sections.rich-text.blocks.caption.settings.text_style.options__1.label"
-            },
-            {
-              "value": "caption-with-letter-spacing",
-              "label": "t:sections.rich-text.blocks.caption.settings.text_style.options__2.label"
-            }
-          ],
-          "default": "caption-with-letter-spacing",
-          "label": "t:sections.rich-text.blocks.caption.settings.text_style.label"
-        },
-        {
-          "type": "select",
           "id": "text_size",
           "options": [
             {
               "value": "small",
-              "label": "t:sections.rich-text.blocks.caption.settings.caption_size.options__1.label"
+              "label": "Small"
             },
             {
               "value": "medium",
-              "label": "t:sections.rich-text.blocks.caption.settings.caption_size.options__2.label"
+              "label": "Medium"
             },
             {
               "value": "large",
-              "label": "t:sections.rich-text.blocks.caption.settings.caption_size.options__3.label"
+              "label": "Large"
             }
           ],
           "default": "medium",
-          "label": "t:sections.rich-text.blocks.caption.settings.caption_size.label"
+          "label": "Text Size"
         }
       ]
     },
     {
       "type": "text",
-      "name": "t:sections.rich-text.blocks.text.name",
-      "limit": 3,
+      "name": "Paragraph",
       "settings": [
         {
           "type": "richtext",
           "id": "text",
-          "default": "t:sections.rich-text.blocks.text.settings.text.default",
-          "label": "t:sections.rich-text.blocks.text.settings.text.label"
+          "label": "Paragrapgh"
         }
       ]
     },
@@ -357,476 +337,3 @@
 
 
 
-{% comment %} header section code {% endcomment %}
- {% comment %} {{ 'section-header.css' | asset_url | stylesheet_tag }} {% endcomment %}
-
-{% style %}
-    #section-header-{{ section.id }} {
-      padding-top: {{ section.settings.top_spacing_desktop }}px;
-      padding-bottom: {{ section.settings.bottom_spacing_desktop }}px;
-    }
-    #section-header-{{ section.id }} .section-header__container{
-      {% if section.settings.enable_background %}
-        background: {{ section.settings.color_scheme.settings.background }};
-      {% endif %}
-      {% if section.settings.enable_max_width %}
-        max-width: {{ section.settings.max_width }}px;
-        margin-left: auto;
-        margin-right: auto;
-      {% endif %}
-    }
-    @media (max-width: 749px) {
-      #section-header-{{ section.id }} {
-          padding-top: {{ section.settings.top_spacing_mobile }}px;
-          padding-bottom: {{ section.settings.bottom_spacing_mobile }}px;
-      }
-    }
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'heading' %}
-          #block-{{ block.id }} {
-            margin-bottom: {{ block.settings.bottom_spacing_desktop }}px;
-          }
-          @media (max-width: 749px) {
-            #block-{{ block.id }}{
-              margin-bottom: {{ block.settings.bottom_spacing_mobile }}px;
-            }
-          }
-        {% when 'subheading' %}
-          #block-{{ block.id }} {
-            margin-bottom: {{ block.settings.bottom_spacing_desktop }}px;
-            margin-top: {{ block.settings.top_spacing_desktop }}px;
-          }
-          @media (max-width: 749px) {
-            #block-{{ block.id }} {
-              margin-bottom: {{ block.settings.bottom_spacing_mobile }}px;
-              margin-top: {{ block.settings.top_spacing_mobile }}px;
-            }
-          }
-      {% endcase %}
-    {% endfor %}
-  {% endstyle %}
-  
-  <div id="section-header-{{ section.id }}" class="section-header__wrapper">
-    <div class="page-width">
-      <div class="section-header__container">
-        {% for block in section.blocks %}
-          {% liquid
-            # Matching current domain with block settings brand selection start ----->
-            assign brand_domain = ''
-            assign current_item = false
-            assign current_url = request.host
-            assign brand_selection = block.settings.brand_selection
-            assign brand_domain = settings[brand_selection]
-            if brand_domain != blank and current_url contains brand_domain or current_url contains 'myshopify.com'
-              assign current_item = true
-            endif
-            # Matching current domain with block settings brand selection end ----->
-          %}
-          {% case block.type %}
-            {% when 'heading' %}
-              {% if current_item or brand_selection == 'all' %}
-                <div
-                  id="block-{{ block.id }}"
-                  class="section-header__heading {{ block.settings.alignment }} scroll-trigger animate--slide-in"
-                  data-cascade
-                  style="--animation-order: {{ forloop.index }};"
-                >
-                  {% liquid
-                    assign heading = block.settings.heading | replace: '[line-break]', '</br>'
-                  %}
-                  <{{ block.settings.heading_size }}>{{ heading }}</{{ block.settings.heading_size }}>
-                </div>
-              {% endif %}
-            {% when 'subheading' %}
-              {% if current_item or brand_selection == 'all' %}
-                <div
-                  id="block-{{ block.id }}"
-                  class="section-header__subheading {{ block.settings.alignment }} scroll-trigger animate--slide-in"
-                  data-cascade
-                  style="--animation-order: {{ forloop.index }};"
-                >
-                  {{ block.settings.subheading }}
-                </div>
-              {% endif %}
-          {% endcase %}
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-  
-  {% schema %}
-  {
-    "name": "Section Header",
-    "disabled_on": {
-      "groups": ["header", "footer"]
-    },
-    "tag": "section",
-    "settings": [
-      {
-        "type": "color_scheme",
-        "id": "color_scheme",
-        "label": "Color Scheme",
-        "default": "scheme-1",
-        "info": "Choose a color scheme for the section."
-      },
-      {
-        "type": "checkbox",
-        "id": "enable_background",
-        "label": "Enable Background",
-        "default": false
-      },
-      {
-        "type": "checkbox",
-        "id": "enable_max_width",
-        "label": "Enable Max Width",
-        "default": false
-      },
-      {
-        "type": "range",
-        "id": "max_width",
-        "label": "Max Width",
-        "default": 675,
-        "min": 0,
-        "max": 1500,
-        "step": 15,
-        "unit": "px",
-        "info": "Set the maximum width of the heading."
-      },
-      {
-        "type": "header",
-        "content": "Desktop Spacing"
-      },
-      {
-        "type": "range",
-        "id": "top_spacing_desktop",
-        "label": "Top Spacing",
-        "default": 0,
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "info": "Adjust the top spacing of the section."
-      },
-      {
-        "type": "range",
-        "id": "bottom_spacing_desktop",
-        "label": "Bottom Spacing",
-        "default": 0,
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "info": "Adjust the bottom spacing of the section."
-      },
-      {
-        "type": "header",
-        "content": "Mobile Spacing"
-      },
-      {
-        "type": "range",
-        "id": "top_spacing_mobile",
-        "label": "Top Spacing",
-        "default": 0,
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "info": "Adjust the top spacing of the section."
-      },
-      {
-        "type": "range",
-        "id": "bottom_spacing_mobile",
-        "label": "Bottom Spacing",
-        "default": 0,
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "info": "Adjust the bottom spacing of the section."
-      }
-    ],
-    "blocks": [
-      {
-        "type": "heading",
-        "name": "Heading",
-        "settings": [
-          {
-            "type": "header",
-            "content": "Brand Selection"
-          },
-          {
-            "type": "select",
-            "id": "brand_selection",
-            "label": "Choose a brand",
-            "info": "If a specific brand is selected instead of 'All,' the item will only be displayed on the corresponding brand's domain.",
-            "options": [
-              {
-                "value": "all",
-                "label": "All"
-              },
-              {
-                "value": "brand_domain_1",
-                "label": "Brand 1 (Lashes)"
-              },
-              {
-                "value": "brand_domain_2",
-                "label": "Brand 2 (Glow)"
-              },
-              {
-                "value": "brand_domain_3",
-                "label": "Brand 3"
-              },
-              {
-                "value": "brand_domain_4",
-                "label": "Brand 4"
-              }
-            ],
-            "default": "all"
-          },
-          {
-            "type": "inline_richtext",
-            "id": "heading",
-            "label": "Heading",
-            "info": "Enter the heading text. For making new line use [line-break] shortcode.",
-            "default": "This is Heading text."
-          },
-          {
-            "type": "select",
-            "id": "heading_size",
-            "label": "Heading Size",
-            "options": [
-              {
-                "value": "h1",
-                "label": "Heading 1"
-              },
-              {
-                "value": "h2",
-                "label": "Heading 2"
-              },
-              {
-                "value": "h3",
-                "label": "Heading 3"
-              },
-              {
-                "value": "h4",
-                "label": "Heading 4"
-              },
-              {
-                "value": "h5",
-                "label": "Heading 5"
-              },
-              {
-                "value": "h6",
-                "label": "Heading 6"
-              }
-            ],
-            "default": "h2"
-          },
-          {
-            "type": "select",
-            "id": "alignment",
-            "label": "Alignment",
-            "options": [
-              {
-                "value": "text-left",
-                "label": "Left"
-              },
-              {
-                "value": "text-center",
-                "label": "Center"
-              },
-              {
-                "value": "text-right",
-                "label": "Right"
-              }
-            ],
-            "default": "text-center"
-          },
-          {
-            "type": "header",
-            "content": "Desktop Spacing"
-          },
-          {
-            "type": "range",
-            "id": "bottom_spacing_desktop",
-            "label": "Bottom Spacing",
-            "default": 0,
-            "min": 0,
-            "max": 100,
-            "step": 1,
-            "unit": "px",
-            "info": "Adjust the bottom spacing of the section."
-          },
-          {
-            "type": "header",
-            "content": "Mobile Spacing"
-          },
-          {
-            "type": "range",
-            "id": "bottom_spacing_mobile",
-            "label": "Bottom Spacing",
-            "default": 0,
-            "min": 0,
-            "max": 100,
-            "step": 1,
-            "unit": "px",
-            "info": "Adjust the bottom spacing of the section."
-          }
-        ]
-      },
-      {
-        "type": "subheading",
-        "name": "Subheading",
-        "settings": [
-          {
-            "type": "header",
-            "content": "Brand Selection"
-          },
-          {
-            "type": "select",
-            "id": "brand_selection",
-            "label": "Choose a brand",
-            "info": "If a specific brand is selected instead of 'All,' the item will only be displayed on the corresponding brand's domain.",
-            "options": [
-              {
-                "value": "all",
-                "label": "All"
-              },
-              {
-                "value": "brand_domain_1",
-                "label": "Brand 1 (Lashes)"
-              },
-              {
-                "value": "brand_domain_2",
-                "label": "Brand 2 (Glow)"
-              },
-              {
-                "value": "brand_domain_3",
-                "label": "Brand 3"
-              },
-              {
-                "value": "brand_domain_4",
-                "label": "Brand 4"
-              }
-            ],
-            "default": "all"
-          },
-          {
-            "type": "richtext",
-            "id": "subheading",
-            "label": "Subheading",
-            "info": "Enter the subheading text",
-            "default": "<p>This is Subheading text</p>"
-          },
-          {
-            "type": "select",
-            "id": "alignment",
-            "label": "Alignment",
-            "options": [
-              {
-                "value": "text-left",
-                "label": "Left"
-              },
-              {
-                "value": "text-center",
-                "label": "Center"
-              },
-              {
-                "value": "text-right",
-                "label": "Right"
-              }
-            ],
-            "default": "text-center"
-          },
-          {
-            "type": "header",
-            "content": "Desktop Spacing"
-          },
-          {
-            "type": "range",
-            "id": "top_spacing_desktop",
-            "label": "Top Spacing",
-            "default": 0,
-            "min": 0,
-            "max": 100,
-            "step": 1,
-            "unit": "px",
-            "info": "Adjust the top spacing of the section."
-          },
-          {
-            "type": "range",
-            "id": "bottom_spacing_desktop",
-            "label": "Bottom Spacing",
-            "default": 0,
-            "min": 0,
-            "max": 100,
-            "step": 1,
-            "unit": "px",
-            "info": "Adjust the bottom spacing of the section."
-          },
-          {
-            "type": "header",
-            "content": "Mobile Spacing"
-          },
-          {
-            "type": "range",
-            "id": "top_spacing_mobile",
-            "label": "Top Spacing",
-            "default": 0,
-            "min": 0,
-            "max": 100,
-            "step": 1,
-            "unit": "px",
-            "info": "Adjust the top spacing of the section."
-          },
-          {
-            "type": "range",
-            "id": "bottom_spacing_mobile",
-            "label": "Bottom Spacing",
-            "default": 0,
-            "min": 0,
-            "max": 100,
-            "step": 1,
-            "unit": "px",
-            "info": "Adjust the bottom spacing of the section."
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Section Header",
-        "settings": {
-          "top_spacing_desktop": 50,
-          "bottom_spacing_desktop": 50,
-          "top_spacing_mobile": 50,
-          "bottom_spacing_mobile": 50,
-          "enable_max_width": false,
-          "max_width": 675
-        },
-        "blocks": [
-          {
-            "type": "heading",
-            "settings": {
-              "heading": "This is Heading text.",
-              "heading_size": "h2",
-              "alignment": "text-center",
-              "bottom_spacing_desktop": 0,
-              "bottom_spacing_mobile": 0
-            }
-          },
-          {
-            "type": "subheading",
-            "settings": {
-              "subheading": "<p>This is Subheading text</p>",
-              "alignment": "text-center",
-              "top_spacing_desktop": 0,
-              "bottom_spacing_desktop": 0
-            }
-          }
-        ]
-      }
-    ]
-  }
-  {% endschema %}
