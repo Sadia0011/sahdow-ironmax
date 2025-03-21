@@ -1,1 +1,215 @@
-{"sections":{"rich_text_bJnztB":{"type":"rich-text","blocks":{"heading_UPpzbH":{"type":"heading","settings":{"heading":"Ihr Ausgangspunkt für ultimative Gewinne","heading_size":"h1"}},"text_a7wTkB":{"type":"text","settings":{"text":"<p>Bei Ironmaxx wissen wir, dass der Muskelaufbau eine Kombination aus diszipliniertem Training, richtiger Ernährung und hochwertigen Nahrungsergänzungsmitteln erfordert. Deshalb bieten wir Ihnen ein speziell entwickeltes Produktsortiment, um Sie auf Ihrem Weg zu mehr Muskelmasse optimal zu unterstützen.¹<\/p>"}}},"block_order":["heading_UPpzbH","text_a7wTkB"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-1","full_width":true,"padding_top":40,"padding_bottom":40}},"image_with_text_pkVQMp":{"type":"image-with-text","blocks":{"heading_9hP4dd":{"type":"heading","settings":{"heading":"Holen Sie sich Ihr Protein","heading_size":"h0"}},"text_xCLYjx":{"type":"text","settings":{"text":"<p>Eine proteinreiche Ernährung ist die Grundlage für den Muskelaufbau<\/p>","text_style":"body"}}},"block_order":["heading_9hP4dd","text_xCLYjx"],"settings":{"image":"shopify:\/\/shop_images\/pic_1.png","height":"medium","desktop_image_width":"medium","layout":"text_first","desktop_content_position":"middle","desktop_content_alignment":"center","content_layout":"no-overlap","section_color_scheme":"scheme-1","color_scheme":"scheme-4d7f1d3f-f86b-4e03-a6fe-5c158daf472c","image_behavior":"zoom-in","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"image_with_text_3YzzBQ":{"type":"image-with-text","blocks":{"heading_rRUy8a":{"type":"heading","settings":{"heading":"100% Whey Protein","heading_size":"h2"}},"text_UB8cMq":{"type":"text","settings":{"text":"<p>Du bist auf der Suche nach einem Molkenprotein, das deine Muskulatur optimal unterstützt und dich beim Erreichen deiner sportlichen Ziele unterstützt? Dann sind Sie bei IronMaxx®, Ihrem Partner für hochwertige Sporternährung, genau richtig!                                                         <\/p>","text_style":"body"}},"text_rBGRQq":{"type":"text","settings":{"text":"<ul><li>Hoher Anteil an BCAAs und EAAs<\/li><li>Zuckerarm<\/li><li>Whey Protein Shake mit schneller Nährstoffaufnahme<\/li><li>Keine Konservierungsstoffe und aspartamfrei<\/li><li>Der Proteinshake mit Wasser ist auch geschmacklich unschlagbar<\/li><li>Sehr hohe Löslichkeit<\/li><li>Bis zu 80% Proteine<\/li><\/ul>","text_style":"body"}},"button_KJCDj9":{"type":"button","settings":{"button_label":"Zum Produkt","button_link":"","button_style_secondary":false}}},"block_order":["heading_rRUy8a","text_UB8cMq","text_rBGRQq","button_KJCDj9"],"settings":{"image":"shopify:\/\/shop_images\/pic2.png","height":"adapt","desktop_image_width":"small","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"","color_scheme":"","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}}},"order":["rich_text_bJnztB","image_with_text_pkVQMp","image_with_text_3YzzBQ"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_heading_sectionnnn_JKGnFp": {
+      "type": "custom-heading-sectionnnn",
+      "blocks": {
+        "heading_zPQkMT": {
+          "type": "heading",
+          "settings": {
+            "brand_selection": "all",
+            "heading": "This is Heading text.",
+            "heading_size": "h1",
+            "alignment": "text-center",
+            "bottom_spacing_desktop": 0,
+            "bottom_spacing_mobile": 0
+          }
+        },
+        "subheading_3gYtxC": {
+          "type": "subheading",
+          "settings": {
+            "brand_selection": "all",
+            "subheading": "<p>This is Subheading text</p>",
+            "alignment": "text-center",
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_zPQkMT",
+        "subheading_3gYtxC"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4d7f1d3f-f86b-4e03-a6fe-5c158daf472c",
+        "enable_background": false,
+        "enable_max_width": false,
+        "max_width": 675,
+        "top_spacing_desktop": 50,
+        "bottom_spacing_desktop": 50,
+        "top_spacing_mobile": 50,
+        "bottom_spacing_mobile": 50
+      }
+    },
+    "custom_rich_text_bHrhdg": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "heading_CJgi7G": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ihr Ausgangspunkt für ultimative Gewinne",
+            "heading_size": "h2"
+          }
+        },
+        "text_MzPHp9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bei Ironmaxx wissen wir, dass der Muskelaufbau eine Kombination aus diszipliniertem Training, richtiger Ernährung und hochwertigen Nahrungsergänzungsmitteln erfordert. Deshalb bieten wir Ihnen ein speziell entwickeltes Produktsortiment, um Sie auf Ihrem Weg zu mehr Muskelmasse optimal zu unterstützen.¹</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CJgi7G",
+        "text_MzPHp9"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_bJnztB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UPpzbH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ihr Ausgangspunkt für ultimative Gewinne",
+            "heading_size": "h1"
+          }
+        },
+        "text_a7wTkB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bei Ironmaxx wissen wir, dass der Muskelaufbau eine Kombination aus diszipliniertem Training, richtiger Ernährung und hochwertigen Nahrungsergänzungsmitteln erfordert. Deshalb bieten wir Ihnen ein speziell entwickeltes Produktsortiment, um Sie auf Ihrem Weg zu mehr Muskelmasse optimal zu unterstützen.¹</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UPpzbH",
+        "text_a7wTkB"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_pkVQMp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9hP4dd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Holen Sie sich Ihr Protein",
+            "heading_size": "h0"
+          }
+        },
+        "text_xCLYjx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Eine proteinreiche Ernährung ist die Grundlage für den Muskelaufbau</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9hP4dd",
+        "text_xCLYjx"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pic_1.png",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-4d7f1d3f-f86b-4e03-a6fe-5c158daf472c",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_3YzzBQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rRUy8a": {
+          "type": "heading",
+          "settings": {
+            "heading": "100% Whey Protein",
+            "heading_size": "h2"
+          }
+        },
+        "text_UB8cMq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Du bist auf der Suche nach einem Molkenprotein, das deine Muskulatur optimal unterstützt und dich beim Erreichen deiner sportlichen Ziele unterstützt? Dann sind Sie bei IronMaxx®, Ihrem Partner für hochwertige Sporternährung, genau richtig!                                                         </p>",
+            "text_style": "body"
+          }
+        },
+        "text_rBGRQq": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Hoher Anteil an BCAAs und EAAs</li><li>Zuckerarm</li><li>Whey Protein Shake mit schneller Nährstoffaufnahme</li><li>Keine Konservierungsstoffe und aspartamfrei</li><li>Der Proteinshake mit Wasser ist auch geschmacklich unschlagbar</li><li>Sehr hohe Löslichkeit</li><li>Bis zu 80% Proteine</li></ul>",
+            "text_style": "body"
+          }
+        },
+        "button_KJCDj9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Zum Produkt",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rRUy8a",
+        "text_UB8cMq",
+        "text_rBGRQq",
+        "button_KJCDj9"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pic2.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "custom_heading_sectionnnn_JKGnFp",
+    "custom_rich_text_bHrhdg",
+    "rich_text_bJnztB",
+    "image_with_text_pkVQMp",
+    "image_with_text_3YzzBQ"
+  ]
+}
