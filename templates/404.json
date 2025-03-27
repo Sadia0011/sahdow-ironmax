@@ -14,6 +14,37 @@
       "disabled": true,
       "settings": {}
     },
+    "custom_rich_text_Bh8efQ": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "heading_yKKBUH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ihr Ausgangspunkt für ultimative Gewinne",
+            "heading_size": 42,
+            "background": ""
+          }
+        },
+        "text_h9RgjF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bei Ironmaxx wissen wir, dass der Muskelaufbau eine Kombination aus diszipliniertem Training, richtiger Ernährung und hochwertigen Nahrungsergänzungsmitteln erfordert. Deshalb bieten wir Ihnen ein speziell entwickeltes Produktsortiment, um Sie auf Ihrem Weg zu mehr Muskelmasse optimal zu unterstützen.¹</p>",
+            "paragraph_text_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "heading_yKKBUH",
+        "text_h9RgjF"
+      ],
+      "settings": {
+        "global_heading_color": "#000000",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "custom_image_with_text_eezXbk": {
       "type": "custom-image-with-text",
       "blocks": {
@@ -114,37 +145,6 @@
         "padding_bottom": 0
       }
     },
-    "custom_rich_text_Bh8efQ": {
-      "type": "custom-rich-text",
-      "blocks": {
-        "heading_yKKBUH": {
-          "type": "heading",
-          "settings": {
-            "heading": "Ihr Ausgangspunkt für ultimative Gewinne",
-            "heading_size": 24,
-            "background": ""
-          }
-        },
-        "text_h9RgjF": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Bei Ironmaxx wissen wir, dass der Muskelaufbau eine Kombination aus diszipliniertem Training, richtiger Ernährung und hochwertigen Nahrungsergänzungsmitteln erfordert. Deshalb bieten wir Ihnen ein speziell entwickeltes Produktsortiment, um Sie auf Ihrem Weg zu mehr Muskelmasse optimal zu unterstützen.¹</p>",
-            "paragraph_text_size": 18
-          }
-        }
-      },
-      "block_order": [
-        "heading_yKKBUH",
-        "text_h9RgjF"
-      ],
-      "settings": {
-        "global_heading_color": "#000000",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "custom_image_with_text_JLmVGc": {
       "type": "custom-image-with-text",
       "blocks": {
@@ -189,9 +189,9 @@
   },
   "order": [
     "main",
+    "custom_rich_text_Bh8efQ",
     "custom_image_with_text_eezXbk",
     "custom_image_with_text_h9DnAp",
-    "custom_rich_text_Bh8efQ",
     "custom_image_with_text_JLmVGc"
   ]
 }
