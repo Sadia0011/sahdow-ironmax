@@ -55,6 +55,65 @@
         "padding_bottom": 0
       }
     },
+    "custom_image_with_text_h9DnAp": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "heading_AdWpUV": {
+          "type": "heading",
+          "settings": {
+            "heading": "100% Whey Protein",
+            "heading_size_new": 36,
+            "heading_weight": 600
+          }
+        },
+        "text_Xfkjie": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Du bist auf der Suche nach einem Molkenprotein, das deine Muskulatur optimal unterstützt und dich beim Erreichen deiner sportlichen Ziele unterstützt? Dann sind Sie bei IronMaxx®, Ihrem Partner für hochwertige Sporternährung, genau richtig!</p>",
+            "paragraph_text_size": 16,
+            "paragraph_text_weight": 400
+          }
+        },
+        "text_3WVXcD": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Hoher Anteil an BCAAs und EAAs</li><li>Zuckerarm</li><li>Whey Protein Shake mit schneller Nährstoffaufnahme</li><li>Keine Konservierungsstoffe und aspartamfrei</li><li>Der Proteinshake mit Wasser ist auch geschmacklich unschlagbar</li><li>Sehr hohe Löslichkeit</li><li>Bis zu 80% Proteine</li></ul>",
+            "paragraph_text_size": 18,
+            "paragraph_text_weight": 400
+          }
+        },
+        "button_yGrVjA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Zum Produkt",
+            "button_link": "#",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AdWpUV",
+        "text_Xfkjie",
+        "text_3WVXcD",
+        "button_yGrVjA"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_36.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "mobile_height": "adapt",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "custom_rich_text_Bh8efQ": {
       "type": "custom-rich-text",
       "blocks": {
@@ -131,6 +190,7 @@
   "order": [
     "main",
     "custom_image_with_text_eezXbk",
+    "custom_image_with_text_h9DnAp",
     "custom_rich_text_Bh8efQ",
     "custom_image_with_text_JLmVGc"
   ]
