@@ -1,1 +1,137 @@
-{"sections":{"main":{"type":"main-404","settings":{}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "disabled": true,
+      "settings": {}
+    },
+    "custom_image_with_text_eezXbk": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "heading_VhPmbB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Holen Sie sich Ihr Protein",
+            "heading_size_new": 40,
+            "heading_weight": 700
+          }
+        },
+        "text_CAKkfA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Eine proteinreiche Ernährung ist die Grundlage für den Muskelaufbau</p>",
+            "paragraph_text_size": 18,
+            "paragraph_text_weight": 400
+          }
+        }
+      },
+      "block_order": [
+        "heading_VhPmbB",
+        "text_CAKkfA"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pic_1.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-4d7f1d3f-f86b-4e03-a6fe-5c158daf472c",
+        "color_scheme": "scheme-4d7f1d3f-f86b-4e03-a6fe-5c158daf472c",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "mobile_height": "adapt",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_rich_text_Bh8efQ": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "heading_yKKBUH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ihr Ausgangspunkt für ultimative Gewinne",
+            "heading_size": 24,
+            "background": ""
+          }
+        },
+        "text_h9RgjF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bei Ironmaxx wissen wir, dass der Muskelaufbau eine Kombination aus diszipliniertem Training, richtiger Ernährung und hochwertigen Nahrungsergänzungsmitteln erfordert. Deshalb bieten wir Ihnen ein speziell entwickeltes Produktsortiment, um Sie auf Ihrem Weg zu mehr Muskelmasse optimal zu unterstützen.¹</p>",
+            "paragraph_text_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "heading_yKKBUH",
+        "text_h9RgjF"
+      ],
+      "settings": {
+        "global_heading_color": "#000000",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_image_with_text_JLmVGc": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "heading_emdKLd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Holen Sie sich Ihr Protein",
+            "heading_size_new": 48,
+            "heading_weight": 700
+          }
+        },
+        "text_N94wE8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Eine proteinreiche Ernährung ist die Grundlage für den Muskelaufbau</p>",
+            "paragraph_text_size": 16,
+            "paragraph_text_weight": 400
+          }
+        }
+      },
+      "block_order": [
+        "heading_emdKLd",
+        "text_N94wE8"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pic3.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-4d7f1d3f-f86b-4e03-a6fe-5c158daf472c",
+        "color_scheme": "scheme-4d7f1d3f-f86b-4e03-a6fe-5c158daf472c",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "mobile_height": "adapt",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_image_with_text_eezXbk",
+    "custom_rich_text_Bh8efQ",
+    "custom_image_with_text_JLmVGc"
+  ]
+}
