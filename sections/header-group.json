@@ -63,9 +63,9 @@
         "breadcrumb_text_color": "#465076",
         "breadcrumb_accent_color_bool": false,
         "breadcrumb_accent_color": "#ff0d0d",
-        "enable_product_page": true,
-        "enable_collection_page": true,
-        "enable_complete_site": true
+        "enable_product_page": false,
+        "enable_collection_page": false,
+        "enable_complete_site": false
       }
     }
   },
